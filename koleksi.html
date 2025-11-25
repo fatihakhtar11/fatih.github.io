@@ -162,6 +162,129 @@
 .btn:hover {
   transform: scale(1.07);
 }
+    /* =========================================================
+   RESPONSIVE CSS UNTUK KOLEKSI (HP + TABLET)
+   ========================================================= */
+
+/* --- Tablet (≤ 992px) --- */
+@media (max-width: 992px) {
+
+  .main {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+/* --- HP (≤ 768px) --- */
+@media (max-width: 768px) {
+
+  /* Sidebar berubah menjadi topbar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    padding: 20px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: none;
+    border-bottom: 2px solid #1d2343;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .sidebar nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* Main turun ke bawah karena topbar */
+  .main {
+    margin-left: 0;
+    margin-top: 90px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* Grid lebih rapat */
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 18px;
+  }
+
+  /* Card mengecil */
+  .card {
+    padding: 14px;
+  }
+
+  .card img {
+    border-width: 1px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+
+/* --- HP kecil (≤ 480px) --- */
+@media (max-width: 480px) {
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .sidebar nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
 
 
   </style>
@@ -278,3 +401,4 @@
 
 </body>
 </html>
+
