@@ -127,6 +127,150 @@
       padding: 20px;
       border-top: 2px solid #1d2343;
     }
+    /* =========================================================
+   RESPONSIVE HALAMAN CEO (HP • TABLET • DESKTOP)
+   ========================================================= */
+
+/* --- Tablet (≤ 992px) --- */
+@media (max-width: 992px) {
+
+  .main {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .ceo-photo {
+    width: 250px;
+    height: 400px;
+  }
+
+  .ceo-info p {
+    font-size: 16px;
+  }
+}
+
+/* --- HP (≤ 768px) --- */
+@media (max-width: 768px) {
+
+  /* Sidebar jadi TOPBAR */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    padding: 18px 15px;
+    border-right: none;
+    border-bottom: 2px solid #1d2343;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    gap: 20px;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .sidebar nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* Main turun ke bawah */
+  .main {
+    margin-left: 0;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ceo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .ceo-photo {
+    width: 260px;
+    height: 380px;
+  }
+
+  .ceo-name {
+    font-size: 24px;
+  }
+
+  .ceo-info {
+    max-width: 100%;
+  }
+
+  .ceo-info p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 0;
+    border-left: none;
+    border-top: 2px solid #4da6ff;
+    padding-top: 10px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+/* --- HP kecil (≤ 480px) --- */
+@media (max-width: 480px) {
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .sidebar nav a {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .ceo-photo {
+    width: 220px;
+    height: 330px;
+  }
+
+  .ceo-name {
+    font-size: 20px;
+  }
+
+  .ceo-info p {
+    font-size: 14px;
+  }
+
+  .quote {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
   </style>
 </head>
 
@@ -181,3 +325,4 @@
 
 </body>
 </html>
+
