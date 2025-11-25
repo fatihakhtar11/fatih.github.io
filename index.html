@@ -200,6 +200,124 @@
       padding: 20px;
       border-top: 2px solid #1d2343;
     }
+    /* =============== RESPONSIVE CSS (TABLET & HP) =============== */
+
+/* --- Tablet (≤ 992px) --- */
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 46px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-text {
+    width: 60%;
+  }
+}
+
+/* --- HP (≤ 768px) --- */
+@media (max-width: 768px) {
+
+  /* Sidebar jadi topbar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 20px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: none;
+    border-bottom: 2px solid #1d2343;
+  }
+
+  /* Brand di kiri */
+  .brand {
+    font-size: 22px;
+  }
+
+  /* Menu di kanan */
+  .sidebar nav {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .sidebar nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* Main turun ke bawah */
+  .main {
+    margin-left: 0;
+    margin-top: 90px; /* ruang untuk topbar */
+    width: 100%;
+  }
+
+  /* Hero rapi di HP */
+  .hero {
+    justify-content: center;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 85%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-text button {
+    padding: 12px 26px;
+    font-size: 15px;
+  }
+
+  /* Slider bisa digeser lebih mudah */
+  .product-slider {
+    padding: 0 20px 40px;
+    gap: 16px;
+  }
+
+  .product-card {
+    min-width: 200px;
+  }
+}
+
+/* --- HP Kecil (≤ 480px) --- */
+@media (max-width: 480px) {
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .sidebar nav a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .product-card {
+    min-width: 170px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -233,3 +351,4 @@
 
 </body>
 </html>
+
