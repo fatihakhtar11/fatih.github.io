@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEO • Nebula Diamond Store</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+    body{
+      background:#0a0f1c;
+      color:#e5eaff;
+      display:flex;
+      min-height:100vh;
+    }
+
+   /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background: #0d1124;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+      border-right: 2px solid #1d2343;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 0 0 12px #4da6ff;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-top: 10px;
+    }
+
+    .sidebar nav a {
+      text-decoration: none;
+      color: #9ab7ff;
+      font-size: 17px;
+      transition: .3s;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(100, 140, 255, 0.6);
+    }
+
+
+    /* MAIN */
+    .main{
+      margin-left:250px;
+      width:calc(100% - 250px);
+      padding:40px;
+    }
+
+    h1{
+      font-size:42px;
+      color:#4da6ff;
+      text-shadow:0 0 12px #4da6ff;
+      margin-bottom:25px;
+    }
+
+    .ceo-container{
+      display:flex;
+      align-items:flex-start;
+      gap:40px;
+      margin-top:20px;
+    }
+
+    /* FOTO CEO BESAR – PORTRAIT */
+    .ceo-photo{
+      width:300px;
+      height:480px;
+      border-radius:18px;
+      object-fit:cover;
+      border:2px solid #4da6ff;
+      box-shadow:0 0 25px rgba(100,140,255,0.5);
+    }
+
+    .ceo-info{
+      max-width:700px;
+      line-height:1.6;
+    }
+
+    .ceo-name{
+      font-size:30px;
+      font-weight:700;
+      color:#4da6ff;
+      margin-bottom:10px;
+      text-shadow:0 0 10px #4da6ff;
+    }
+
+    p{
+      color:#d3d9ff;
+      font-size:17px;
+      margin-bottom:16px;
+    }
+
+    .quote{
+      margin-top:15px;
+      font-style:italic;
+      color:#9ab7ff;
+      font-size:18px;
+      border-left:4px solid #4da6ff;
+      padding-left:12px;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #4da6ff;
+      padding: 20px;
+      border-top: 2px solid #1d2343;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">Nebula</div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="koleksi.html">Top Up Game</a>
+    <a href="pemesanan.html">Order Diamond</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="ceo.html" class="active">CEO</a>
+  </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <h1>CEO</h1>
+
+  <div class="ceo-container">
+    
+    <!-- FOTO BESAR & PANJANG -->
+    <img src="CEO.jpg" alt="Foto CEO" class="ceo-photo">
+
+    <div class="ceo-info">
+      <div class="ceo-name">Fathi Akhtar Nabil Sarwandi
+      </div>
+
+      <p>
+        Fathi Akhtar Nabil Sarwandi adalah pendiri sekaligus CEO dari <b>Nebula Diamond Store</b>,
+        sebuah platform top up game yang berfokus pada kecepatan, keamanan, dan harga yang terjangkau.
+        Dengan pengalaman lebih dari 5 tahun dalam industri digital gaming marketplace, ia berhasil 
+        membangun layanan yang dipercaya ribuan gamer di seluruh Indonesia.
+      </p>
+
+      <p>
+        Di tangan beliau, Nebula tumbuh menjadi salah satu penyedia layanan top up paling stabil,
+        cepat, dan responsif. Visi Fathi adalah membuat Nebula menjadi ekosistem top up game terbesar 
+        dengan harga termurah namun tetap aman dan profesional.
+      </p>
+
+      <div class="quote">
+        “Hiburan gamer adalah prioritas kami. Kecepatan adalah komitmen kami.”
+      </div>
+    </div>
+  </div>
+ <footer>© 2025 Nebula Diamond Store • FATIH 12SAINTEK A CHATGPT</footer>
+</div>
+
+</body>
+</html>

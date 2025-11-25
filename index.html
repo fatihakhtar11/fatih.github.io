@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nebula Diamond Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0a0f1c;
+      color: #e5eaff;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background: #0d1124;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+      border-right: 2px solid #1d2343;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 0 0 12px #4da6ff;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-top: 10px;
+    }
+
+    .sidebar nav a {
+      text-decoration: none;
+      color: #9ab7ff;
+      font-size: 17px;
+      transition: .3s;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(100, 140, 255, 0.6);
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      margin-left: 250px;
+      width: calc(100% - 250px);
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('gaming-bg.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 80px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to left, rgba(10,15,28,0.95), rgba(10,15,28,0.3));
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 10;
+      width: 45%;
+      text-align: right;
+    }
+
+    .hero-text h1 {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #4da6ff;
+      text-shadow: 0 0 15px #4da6ff;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin: 20px 0 30px;
+      color: #c8d4ff;
+    }
+
+    .hero-text button {
+      padding: 14px 32px;
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      border: none;
+      font-size: 17px;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: .2s;
+      box-shadow: 0 0 20px rgba(100, 140, 255, 0.5);
+    }
+
+    .hero-text button:hover {
+      transform: scale(1.06);
+    }
+
+    /* TITLE */
+    .title {
+      margin-top: 60px;
+      padding-left: 40px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-shadow: 0 0 12px #4da6ff;
+    }
+
+    /* PRODUCT SLIDER */
+    .product-slider {
+      margin-top: 30px;
+      padding: 0 40px 60px;
+      display: flex;
+      gap: 25px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .product-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .product-slider::-webkit-scrollbar-thumb {
+      background: #4da6ff;
+      border-radius: 10px;
+    }
+
+    .product-card {
+      min-width: 260px;
+      background: #131a33;
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 0 25px rgba(60, 80, 160, 0.4);
+      transition: .3s;
+      border: 1px solid #2d3c78;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(100, 140, 255, 0.7);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #4da6ff;
+    }
+
+    .product-card h3 {
+      margin-top: 12px;
+      color: #4da6ff;
+      font-size: 20px;
+      text-shadow: 0 0 8px #4da6ff;
+    }
+
+    .product-card p {
+      margin-top: 5px;
+      color: #d3d9ff;
+      font-size: 17px;
+    }
+
+  footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #4da6ff;
+      padding: 20px;
+      border-top: 2px solid #1d2343;
+    }
+  </style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">Nebula</div>
+  <nav>
+    <a href="index.html" class="active">Beranda</a>
+    <a href="koleksi.html">Top Up Game</a>
+    <a href="pemesanan.html">Order Diamond</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="ceo.html" >CEO</a>
+  </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Top Up Diamond Game<br>Cepat, Murah & Aman</h1>
+      <p>Layanan top up diamond untuk Mobile Legends, Free Fire, Genshin, PUBG dan banyak game lainnya.</p>
+      <button>Top Up Sekarang</button>
+    </div>
+  </section>
+
+ <footer>© 2025 Nebula Diamond Store • FATIH 12SAINTEK A CHATGPT</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemesanan • Nebula Diamond Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0a0f1c;
+      color: #e5eaff;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background: #0d1124;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+      border-right: 2px solid #1d2343;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 0 0 12px #4da6ff;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-top: 10px;
+    }
+
+    .sidebar nav a {
+      text-decoration: none;
+      color: #9ab7ff;
+      font-size: 17px;
+      transition: .3s;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(100, 140, 255, 0.6);
+    }
+
+
+    /* MAIN */
+    .main {
+      margin-left: 250px;
+      padding: 50px;
+      width: calc(100% - 250px);
+    }
+
+    /* TITLE */
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-shadow: 0 0 12px #4da6ff;
+      margin-bottom: 40px;
+    }
+
+    /* FORM CARD */
+    .card {
+      background: #131a33;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(60, 80, 160, 0.4);
+      border: 1px solid #2d3c78;
+      max-width: 600px;
+    }
+
+    .card label {
+      font-size: 16px;
+      margin-bottom: 6px;
+      display: block;
+      color: #c8d4ff;
+    }
+
+    .card input,
+    .card select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background: #0f1430;
+      border: 1px solid #4da6ff;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(100, 140, 255, 0.5);
+      transition: .2s;
+    }
+
+    .card button:hover {
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #4da6ff;
+      padding: 20px;
+      border-top: 2px solid #1d2343;
+    }
+  </style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">Nebula</div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="koleksi.html">Top Up Game</a>
+    <a href="pemesanan.html" class="active">Order Diamond</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="ceo.html" >CEO</a>
+  </nav>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <h1 class="title">Form Pemesanan Diamond</h1>
+
+  <div class="card">
+    <label>ID Game</label>
+    <input type="text" placeholder="Masukkan ID / UID Game Anda">
+
+    <label>Pilih Game</label>
+    <select>
+      <option>Mobile Legends</option>
+      <option>Free Fire</option>
+      <option>PUBG Mobile</option>
+      <option>Genshin Impact</option>
+      <option>Honor of Kings</option>
+      <option>Point Blank</option>
+    </select>
+
+    <label>Pilih Nominal Diamond</label>
+    <select>
+      <option>86 Diamond — Rp 20.000</option>
+      <option>172 Diamond — Rp 38.000</option>
+      <option>257 Diamond — Rp 55.000</option>
+      <option>514 Diamond — Rp 110.000</option>
+      <option>1000 Diamond — Rp 199.000</option>
+    </select>
+
+    <label>Metode Pembayaran</label>
+    <select>
+      <option>DANA</option>
+      <option>OVO</option>
+      <option>GOPAY</option>
+      <option>Transfer Bank</option>
+      <option>QRIS</option>
+    </select>
+
+    <button>Pesan Sekarang</button>
+  </div>
+
+  <footer>© 2025 Nebula Diamond Store • FATIH 12SAINTEK A CHATGPT</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koleksi • Nebula Diamond Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0a0f1c;
+      color: #e5eaff;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      background: #0d1124;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+      border-right: 2px solid #1d2343;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 0 0 12px #4da6ff;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-top: 10px;
+    }
+
+    .sidebar nav a {
+      text-decoration: none;
+      color: #9ab7ff;
+      font-size: 17px;
+      transition: .3s;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(100, 140, 255, 0.6);
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      margin-left: 250px;
+      padding: 40px;
+      width: calc(100% - 250px);
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #4da6ff;
+      text-shadow: 0 0 12px #4da6ff;
+      margin-bottom: 40px;
+    }
+
+    /* GRID PRODUK */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #131a33;
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #2d3c78;
+      text-align: center;
+      box-shadow: 0 0 22px rgba(60, 80, 160, 0.4);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(100, 140, 255, 0.7);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #4da6ff;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      color: #4da6ff;
+      text-shadow: 0 0 6px #4da6ff;
+    }
+
+    .card p {
+      margin: 8px 0;
+      color: #cdd6ff;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: linear-gradient(90deg,#4da6ff,#6e5cff);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 0 18px rgba(100, 140, 255, 0.5);
+      transition: .2s;
+    }
+
+    .card button:hover {
+      transform: scale(1.07);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #4da6ff;
+      padding: 20px;
+      border-top: 2px solid #1d2343;
+    }
+    .btn {
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  background: linear-gradient(90deg,#4da6ff,#6e5cff);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(100,140,255,0.5);
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">Nebula</div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="koleksi.html" class="active">Top Up Game</a>
+    <a href="pemesanan.html">Order Diamond</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="ceo.html">CEO</a>
+  </nav>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+  <h1 class="title">Pilih Game yang Ingin Kamu Top Up</h1>
+
+  <div class="grid">
+
+  <!-- MOBILE LEGENDS -->
+  <div class="card">
+    <img src="ml.jpg" alt="Mobile Legends">
+    <h3>Mobile Legends</h3>
+    <p>Diamond MLBB • Termurah</p>
+
+    <a href="pemesanan.html" class="btn">86 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">172 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">257 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">344 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">514 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">1.056 Diamonds</a>
+  </div>
+
+  <!-- FREE FIRE -->
+  <div class="card">
+    <img src="ff.jpeg" alt="Free Fire">
+    <h3>Free Fire</h3>
+    <p>Diamond FF • Instant</p>
+
+    <a href="pemesanan.html" class="btn">70 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">140 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">355 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">720 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">1.450 Diamonds</a><br>
+    <a href="pemesanan.html" class="btn">2.180 Diamonds</a>
+  </div>
+
+  <!-- PUBG -->
+  <div class="card">
+    <img src="pubg.png" alt="PUBG Mobile">
+    <h3>PUBG Mobile</h3>
+    <p>UC PUBG • Legal & Aman</p>
+
+    <a href="pemesanan.html" class="btn">60 UC</a><br>
+    <a href="pemesanan.html" class="btn">325 UC</a><br>
+    <a href="pemesanan.html" class="btn">660 UC</a><br>
+    <a href="pemesanan.html" class="btn">1800 UC</a><br>
+    <a href="pemesanan.html" class="btn">3850 UC</a><br>
+    <a href="pemesanan.html" class="btn">8100 UC</a>
+  </div>
+
+  <!-- GENSHIN IMPACT -->
+  <div class="card">
+    <img src="genshin.jpeg" alt="Genshin Impact">
+    <h3>Genshin Impact</h3>
+    <p>Genesis Crystal • Promo</p>
+
+    <a href="pemesanan.html" class="btn">60 GC</a><br>
+    <a href="pemesanan.html" class="btn">300 GC</a><br>
+    <a href="pemesanan.html" class="btn">980 GC</a><br>
+    <a href="pemesanan.html" class="btn">1.980 GC</a><br>
+    <a href="pemesanan.html" class="btn">3.280 GC</a><br>
+    <a href="pemesanan.html" class="btn">6.480 GC</a>
+  </div>
+
+  <!-- VALORANT -->
+  <div class="card">
+    <img src="valo.png" alt="Valorant">
+    <h3>Valorant</h3>
+    <p>Valorant Points • Fast</p>
+
+    <a href="pemesanan.html" class="btn">125 VP</a><br>
+    <a href="pemesanan.html" class="btn">420 VP</a><br>
+    <a href="pemesanan.html" class="btn">700 VP</a><br>
+    <a href="pemesanan.html" class="btn">1125 VP</a><br>
+    <a href="pemesanan.html" class="btn">1650 VP</a><br>
+    <a href="pemesanan.html" class="btn">2400 VP</a>
+  </div>
+
+  <!-- COD MOBILE -->
+  <div class="card">
+    <img src="codm.webp" alt="COD Mobile">
+    <h3>Call of Duty Mobile</h3>
+    <p>CP CODM • Instant</p>
+
+    <a href="pemesanan.html" class="btn">63 CP</a><br>
+    <a href="pemesanan.html" class="btn">128 CP</a><br>
+    <a href="pemesanan.html" class="btn">317 CP</a><br>
+    <a href="pemesanan.html" class="btn">634 CP</a><br>
+    <a href="pemesanan.html" class="btn">1.372 CP</a><br>
+    <a href="pemesanan.html" class="btn">2.058 CP</a>
+  </div>
+
+</div>
+
+
+  <footer>© 2025 Nebula Diamond Store • FATIH 12SAINTEK A</footer>
+</div>
+
+</body>
+</html>
