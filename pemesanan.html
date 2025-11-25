@@ -140,6 +140,132 @@
       padding: 20px;
       border-top: 2px solid #1d2343;
     }
+    /* =========================================================
+   RESPONSIVE PEMESANAN (HP & TABLET)
+   ========================================================= */
+
+/* --- Tablet (≤ 992px) --- */
+@media (max-width: 992px) {
+  .main {
+    padding: 35px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* --- HP (≤ 768px) --- */
+@media (max-width: 768px) {
+
+  /* Sidebar jadi TOPBAR */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    padding: 18px 15px;
+    border-right: none;
+    border-bottom: 2px solid #1d2343;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .sidebar nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* Main turun ke bawah */
+  .main {
+    margin-left: 0;
+    margin-top: 90px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* Card lebih kecil */
+  .card {
+    padding: 22px;
+  }
+
+  .card label {
+    font-size: 14px;
+  }
+
+  .card input,
+  .card select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+/* --- HP kecil (≤ 480px) --- */
+@media (max-width: 480px) {
+
+  .brand {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .sidebar nav a {
+    font-size: 11px;
+    padding: 5px 7px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card input,
+  .card select {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .card button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -202,3 +328,4 @@
 
 </body>
 </html>
+
